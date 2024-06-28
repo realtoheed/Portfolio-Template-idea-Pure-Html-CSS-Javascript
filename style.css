@@ -32,10 +32,11 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 61.65px;
 }
 
 nav .logo{
-    width: 140px;
+    height: 61.65px;
 }
 
 nav ul li{
@@ -400,7 +401,7 @@ nav .fas{
     }
 
     .header-text{
-        margin-top: 100%;
+        margin-top: 110%;
         font-size: 16px;
     }
     

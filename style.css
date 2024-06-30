@@ -89,7 +89,7 @@ nav ul li a:hover::after{
 }
 
 #about .container{
-    padding: 10px 10%;
+    padding: 10px 5% 10px 5%;
 }
 
 .row{
@@ -99,7 +99,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 39%;
 }
 
 .about-col-1 img{
@@ -108,7 +108,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 56%;
 }
 
 .sub-title{

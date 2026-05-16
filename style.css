@@ -246,7 +246,7 @@ p {
 }
 
 .hero-content {
-    max-width: 450px;
+    max-width: 700px;
     text-align: left;
     padding: 0 60px 0 80px;
 }
@@ -264,6 +264,7 @@ p {
     font-size: 72px;
     margin-bottom: 20px;
     line-height: 1.1;
+    word-spacing: normal;
 }
 
 .hero-title .highlight {
@@ -278,6 +279,7 @@ p {
     font-size: 18px;
     color: var(--text-light);
     margin-bottom: 40px;
+    line-height: 1.6;
 }
 
 .hero-cta {

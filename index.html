@@ -1,259 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NY1CTKYH6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4NY1CTKYH6');
-</script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Toheed Shah</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Syed Toheed Shah - SEO Team Lead & Digital Marketing Specialist. 4+ years of experience in digital marketing, SEO, email marketing, and social media management.">
+    <meta name="keywords" content="SEO, Digital Marketing, Email Marketing, Social Media, Content Marketing, Web Development">
+    <title>Syed Toheed Shah - SEO Team Lead & Digital Marketing Specialist</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NY1CTKYH6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4NY1CTKYH6');
+    </script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Digital Marketing Specialist & SEO Team Lead</p>
-                <h1>Hi, I'm <span>Toheed</span> Shah<br> From Islamabad</h1>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Toheed Shah Logo">
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-close" id="navClose"><i class="fas fa-times"></i></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
+    </nav>
 
-<!-------- About Section -------->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="about">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm Syed Toheed Shah, a results-driven digital marketing specialist with 4+ years of experience in SEO, content marketing, social media management, and email marketing. I excel in developing comprehensive digital marketing strategies for healthcare and medical billing companies. Currently serving as SEO Team Lead at MIU Medical Billing, managing multiple high-value client accounts and driving measurable business growth through data-driven marketing initiatives and proven lead generation techniques.</p><br>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>SEO & Digital Marketing</span><br>Keyword Research, On-Page Optimization, Technical SEO, Link Building</li>
-                            <li><span>Email Marketing</span><br>Mailchimp, Campaign Management, Lead Nurturing</li>
-                            <li><span>Social Media Management</span><br>Content Strategy, Community Engagement, Analytics</li>
-                            <li><span>Team Leadership</span><br>Team Management, Strategy Development, Client Relations</li>
-                            <li><span>Web Development</span><br>Website Building, Optimization, Responsive Design</li>
-                            <li><span>Graphic Design</span><br>Visual Communication, Branding, Content Creation</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>SEO Team Lead</span><br>MIU Medical Billing (March 2026 - Present)</li>
-                            <li><span>Digital Marketing Specialist (Freelance)</span><br>Various Companies, Cambodia (March 2025 - November 2025)</li>
-                            <li><span>Social Media Manager & Email Marketing Specialist</span><br>Medical Billing Soft (October 2023 - February 2024)</li>
-                            <li><span>SEO Executive</span><br>Practice Claim (February 2023 - August 2023)</li>
-                            <li><span>SEO Intern</span><br>Direct2Success Ltd (July 2022 - October 2022)</li>
-                            <li><span>CSR & Medical Billing Sales Rep</span><br>West Crew Networks (September 2019 - June 2020)</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Bachelor of Business Administration</span><br>COMSATS University Islamabad (4 Semesters Completed)</li>
-                            <li><span>Intermediate in Computer Science</span><br>FBISE Board (2022)</li>
-                            <li><span>Matriculation in Computer Science</span><br>FBISE Board (2020)</li>
-                        </ul>
-                    </div>
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Welcome to my portfolio</p>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Toheed Shah</span></h1>
+                <p class="hero-description">SEO Team Lead & Digital Marketing Specialist based in Islamabad, Pakistan</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="images/my-cv.pdf" download class="btn btn-secondary">Download CV</a>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/user.png" alt="Syed Toheed Shah">
+                </div>
+                
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm Syed Toheed Shah, a results-driven digital marketing specialist with 4+ years of hands-on experience in SEO, content marketing, social media management, and email marketing. I specialize in developing comprehensive digital marketing strategies for healthcare and medical billing companies.
+                    </p>
+                    <p class="about-text">
+                        Currently serving as SEO Team Lead at MIU Medical Billing, I manage multiple high-value client accounts and drive measurable business growth through data-driven marketing initiatives and proven lead generation techniques.
+                    </p>
+                    
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="skills">
+                            <i class="fas fa-code"></i> Skills
+                        </button>
+                        <button class="tab-btn" data-tab="experience">
+                            <i class="fas fa-briefcase"></i> Experience
+                        </button>
+                        <button class="tab-btn" data-tab="education">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </button>
+                    </div>
+                    
+                    <!-- Skills Tab -->
+                    <div class="tab-content active" id="skills">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <h4>SEO & Digital Marketing</h4>
+                                <p>Keyword Research, On-Page Optimization, Technical SEO, Link Building, Content Strategy</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Email Marketing</h4>
+                                <p>Mailchimp, Campaign Management, Lead Nurturing, Automation, Analytics</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Social Media Management</h4>
+                                <p>Content Strategy, Community Engagement, Analytics, Campaign Execution</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Team Leadership</h4>
+                                <p>Team Management, Strategy Development, Client Relations, Performance Optimization</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Web Development</h4>
+                                <p>Website Building, SEO Optimization, Responsive Design, User Experience</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Graphic Design</h4>
+                                <p>Visual Communication, Branding, Content Creation, Marketing Materials</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Tab -->
+                    <div class="tab-content" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Search Engine Optimization Team Lead</h4>
+                                    <p class="company">MIU Medical Billing</p>
+                                    <p class="date"><i class="fas fa-calendar"></i> Mar 2026 - Present (3 mos)</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Texas, United States · Remote</p>
+                                    <p class="skills">Search Engine Optimization (SEO), Email Marketing</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Freelance Digital Marketing Specialist</h4>
+                                    <p class="company">Freelance</p>
+                                    <p class="date"><i class="fas fa-calendar"></i> Mar 2025 - Nov 2025 (9 mos)</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia · Hybrid</p>
+                                    <p class="skills">Email Marketing, SEO, Social Media Management</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Search Engine Optimization Executive</h4>
+                                    <p class="company">Medical Billing Soft</p>
+                                    <p class="date"><i class="fas fa-calendar"></i> Apr 2024 - Dec 2024 (9 mos)</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan · Remote</p>
+                                    <p class="skills">Search Engine Optimization (SEO)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Search Engine Optimization Executive</h4>
+                                    <p class="company">Practice Claim</p>
+                                    <p class="date"><i class="fas fa-calendar"></i> Oct 2023 - Feb 2024 (5 mos)</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan · Remote</p>
+                                    <p class="skills">Search Engine Optimization (SEO), On-Page SEO</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Data Entry Clerk</h4>
+                                    <p class="company">Star Marketing Pvt. Ltd</p>
+                                    <p class="date"><i class="fas fa-calendar"></i> Feb 2023 - Aug 2023 (7 mos)</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan · On-site</p>
+                                    <p class="skills">Microsoft Excel</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>SEO Intern</h4>
+                                    <p class="company">Direct2Success</p>
+                                    <p class="date"><i class="fas fa-calendar"></i> Jul 2022 - Oct 2022 (4 mos)</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan · On-site</p>
+                                    <p class="skills">Search Engine Optimization (SEO)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Customer Service Representative</h4>
+                                    <p class="company">Westcrew Networks LLC</p>
+                                    <p class="date"><i class="fas fa-calendar"></i> Sep 2019 - Jun 2020 (10 mos)</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Rawalpindi, Punjab, Pakistan · On-site</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Tab -->
+                    <div class="tab-content" id="education">
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="education-details">
+                                    <h4>Bachelor of Business Administration</h4>
+                                    <p class="institution">COMSATS University Islamabad</p>
+                                    <p class="description">4 Semesters Completed</p>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="education-details">
+                                    <h4>Intermediate in Computer Science</h4>
+                                    <p class="institution">FBISE Board</p>
+                                    <p class="description">2022</p>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="education-details">
+                                    <h4>Matriculation in Computer Science</h4>
+                                    <p class="institution">FBISE Board</p>
+                                    <p class="description">2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
-     <div id="services">
+    <section class="services" id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <h2>SEO & Content Marketing</h2>
+            <div class="section-header">
+                <h2>My Services</h2>
+                <p class="section-subtitle">Comprehensive digital marketing solutions tailored to your business needs</p>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </div>
+                    <h3>SEO & Content Marketing</h3>
                     <p>Comprehensive SEO services including keyword research, on-page optimization, technical SEO, link building, and content strategy to improve organic visibility and drive qualified traffic.</p>
-                    <a href="">Learn More</a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-envelope"></i>
-                    <h2>Email Marketing</h2>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Marketing</h3>
                     <p>Strategic email marketing campaigns using Mailchimp and advanced automation. Targeted campaigns for lead nurturing, customer engagement, and conversion optimization with detailed analytics.</p>
-                    <a href="">Learn More</a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-share-nodes"></i>
-                    <h2>Social Media Management</h2>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
                     <p>End-to-end social media management: strategic content creation, community engagement, campaign execution, and analytics-driven insights to grow your online presence effectively.</p>
-                    <a href="">Learn More</a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
                     <p>Professional website development with responsive design, SEO optimization, and user-friendly interfaces. Custom solutions tailored to your business needs and target audience.</p>
-                    <a href="">Learn More</a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Graphic Design</h2>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
                     <p>Creative visual design services including logos, branding, marketing materials, and visual content that effectively communicates your brand message and captivates your audience.</p>
-                    <a href="">Learn More</a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h2>Digital Strategy</h2>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Strategy</h3>
                     <p>Comprehensive digital marketing strategy development, market research, competitive analysis, and implementation planning to achieve your business goals and maximize ROI.</p>
-                    <a href="">Learn More</a>
                 </div>
             </div>
         </div>
-     </div>
+    </section>
 
-
-    <!------ Portfolio Section ------>
-    <div id="portfolio">
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="work1">
-                    <div class="layer">
-                        <h3>SEO Optimization & Digital Marketing</h3>
-                        <p>Comprehensive SEO and digital marketing campaigns for medical billing and healthcare companies. Improved organic visibility, increased qualified leads, and measurable ROI through strategic keyword optimization and content marketing.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">Showcasing successful digital marketing campaigns and projects</p>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/work-1.png" alt="SEO Optimization & Digital Marketing">
+                        <div class="portfolio-overlay">
+                            <h3>SEO Optimization & Digital Marketing</h3>
+                            <p>Comprehensive SEO and digital marketing campaigns for medical billing and healthcare companies. Improved organic visibility, increased qualified leads, and measurable ROI through strategic keyword optimization and content marketing.</p>
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="work2">
-                    <div class="layer">
-                        <h3>Email Marketing Campaigns</h3>
-                        <p>Designed and executed high-performing email marketing campaigns using Mailchimp. Developed targeted strategies for lead nurturing, customer engagement, and conversion optimization with detailed performance analytics.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/work-2.png" alt="Email Marketing Campaigns">
+                        <div class="portfolio-overlay">
+                            <h3>Email Marketing Campaigns</h3>
+                            <p>Designed and executed high-performing email marketing campaigns using Mailchimp. Developed targeted strategies for lead nurturing, customer engagement, and conversion optimization with detailed performance analytics.</p>
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="work3">
-                    <div class="layer">
-                        <h3>Social Media & Web Development</h3>
-                        <p>End-to-end social media management with strategic content creation and community engagement. Custom website development with responsive design and SEO optimization for improved user experience and online visibility.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/work-3.png" alt="Social Media & Web Development">
+                        <div class="portfolio-overlay">
+                            <h3>Social Media & Web Development</h3>
+                            <p>End-to-end social media management with strategic content creation and community engagement. Custom website development with responsive design and SEO optimization for improved user experience and online visibility.</p>
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="" class="btn">See More</a>
         </div>
-    </div>
+    </section>
 
-    <!------ Contact Section ------>
-    <div id="contact">
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>contacttoheed@gmail.com</p>
-                    <p><i class="fas fa-phone-square"></i>+923085853001</p>
-                    <p><i class="fas fa-map-marker"></i>Islamabad, Pakistan</i></p>
-                    <div class="social-icons">
-                        <a href="https://web.facebook.com/whytoheed/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/toheedvibes"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/syedtoheedshah/"><i class="fab fa-linkedin"></i></a>
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next digital marketing project</p>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:contacttoheed@gmail.com">contacttoheed@gmail.com</a>
+                        </div>
                     </div>
-                    <a href="images/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+923085853001">+92 308 5853001</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Islamabad, Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://web.facebook.com/whytoheed/" title="Facebook" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/toheedvibes" title="Instagram" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/toheedshah/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" autocomplete="on">
-                    <input type="text" name="Name" placeholder="Your Name" required autocomplete="name">
-                    <input type="email" name="Email" placeholder="Your Email" required autocomplete="email">
-                    <textarea name="Message" placeholder="Message" rows="6"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" name="submit-to-google-sheet">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" name="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" name="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" name="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="formMessage" class="form-message"></div>
                     </form>
-                    <span id="msg"></span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    
-    <!------ Footer Section ------>
-    <footer class="copyright">
-        <p>Copyright &copy; Syed Toheed Shah. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Syed Toheed Shah. All rights reserved.</p>
+            <p class="footer-credit">Designed & Developed with <i class="fas fa-heart"></i> by Syed Toheed Shah</p>
+        </div>
     </footer>
 
-
-
-
+    <!-- Scripts -->
+    <script src="script.js"></script>
     
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbypduZ4Mw8NiwMSbvNS2kdG7V0uZ7JqcdrwdpNyoVXT_RgAXdJbEm27SFA7iI8tynSM/exec';
+        const form = document.querySelector('.contact-form');
+        const formMessage = document.getElementById('formMessage');
 
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbypduZ4Mw8NiwMSbvNS2kdG7V0uZ7JqcdrwdpNyoVXT_RgAXdJbEm27SFA7iI8tynSM/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
+            e.preventDefault();
+            const formData = new FormData(form);
+            
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(() => {
+                    formMessage.textContent = 'Message sent successfully! Thank you for contacting me.';
+                    formMessage.classList.add('success');
+                    form.reset();
+                    setTimeout(() => {
+                        formMessage.textContent = '';
+                        formMessage.classList.remove('success');
+                    }, 5000);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    formMessage.textContent = 'Error sending message. Please try again.';
+                    formMessage.classList.add('error');
+                });
+        });
     </script>
 </body>
 </html>

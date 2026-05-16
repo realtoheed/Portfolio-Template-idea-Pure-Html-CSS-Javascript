@@ -321,14 +321,19 @@ p {
     color: var(--primary-color);
 }
 
-.tab-btn.active::after {
+.tab-btn::after {
     content: '';
     position: absolute;
     bottom: -20px;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 3px;
     background: var(--primary-color);
+    transition: var(--transition);
+}
+
+.tab-btn.active::after {
+    width: 100%;
 }
 
 .tab-content {

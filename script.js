@@ -23,7 +23,8 @@ const tabButtons = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
 
 tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
         const tabName = button.getAttribute('data-tab');
         
         // Remove active class from all buttons and contents
@@ -32,7 +33,10 @@ tabButtons.forEach(button => {
         
         // Add active class to clicked button and corresponding content
         button.classList.add('active');
-        document.getElementById(tabName).classList.add('active');
+        const targetTab = document.getElementById(tabName);
+        if (targetTab) {
+            targetTab.classList.add('active');
+        }
     });
 });
 
@@ -44,9 +48,9 @@ window.addEventListener('scroll', () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
     if (scrollTop > 100) {
-        navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.5)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
+        navbar.classList.remove('scrolled');
     }
     
     lastScrollTop = scrollTop;
